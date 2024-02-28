@@ -1,10 +1,11 @@
 'use strict'
 
-import Express from 'express'
+import express from 'express';
 import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
-import { dbConnection } from './mongo';
+import { dbConnection } from './mongo.js';
+import adminRoutes from '../src/admin/admin.routes.js';
 
 class Server{
 
@@ -12,12 +13,14 @@ class Server{
         this.app = express();
         this.port = process.env.PORT;
         
+        this.adminPath = '/gestorApi/v1/admin'
+
         this.middlewares();
         this.connectarDB();
         this.routes();
     }
 
-    async connectarDB(){
+    async conectarDB(){
         await dbConnection();
     }
 
@@ -30,7 +33,7 @@ class Server{
     }
 
     routes(){
-
+        this.app.use(this.adminPath, adminRoutes);
     }
 
     listen(){
