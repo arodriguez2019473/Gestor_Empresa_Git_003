@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2024-03-03T21:53:38.697Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9ca141ff-2922-4154-b367-dcfc6c86b5e8",
+            "colId": "c6dab463-e4a5-4141-a835-abe5881febc9",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/gestorApi/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T19:01:35.331Z",
+            "modified": "2024-03-03T21:49:59.808Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"correo\": \"aukysey567@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
