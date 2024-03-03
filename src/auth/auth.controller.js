@@ -28,7 +28,7 @@ export const login = async (req, res) => {
             });
         }
 
-        const token = await generarJWT(admin.id);
+        const token = await generarJWT( admin.id );
 
         res.status(200).json({
             msg: '¡Login OK!',
