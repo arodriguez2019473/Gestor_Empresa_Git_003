@@ -9,7 +9,9 @@ const router = Router()
 router.post(
     '/login',
     [
-        check('correo', '')
-    ]
+        check('correo', 'This is not a valid email'),
+        check('password','The password is mandatory').not().isEmpty(),
+        validarCampos,
+    ], login)
 
-)
+    export default router
