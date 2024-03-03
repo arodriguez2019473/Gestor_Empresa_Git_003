@@ -14,11 +14,8 @@ import {
 import { validarCampos } from "../middlewares/validar-campos.js";
 
 const router = Router();
-
-// Ruta para obtener la lista de administradores
 router.get("/", getAdmins);
-
-// Ruta para obtener un administrador por su ID
+/*
 router.get(
   "/:id",
   [
@@ -27,8 +24,8 @@ router.get(
   ],
   getAdminById
 );
+*/
 
-// Ruta para crear un nuevo administrador
 router.post(
   "/",
   [

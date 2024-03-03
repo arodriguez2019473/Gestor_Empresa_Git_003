@@ -16,7 +16,7 @@ class Server{
         this.adminPath = '/gestorApi/v1/admin'
 
         this.middlewares();
-        this.connectarDB();
+        this.conectarDB();
         this.routes();
     }
 
