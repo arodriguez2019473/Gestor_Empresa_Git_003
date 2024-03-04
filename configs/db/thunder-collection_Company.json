@@ -1,0 +1,71 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Company",
+    "dateExported": "2024-03-04T00:56:11.375Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3c2d2a4d-0347-419a-87d0-47b798462b65",
+            "colId": "2c4f9300-2691-4a60-b137-ac14fbba1d57",
+            "containerId": "",
+            "name": "agregar",
+            "url": "http://localhost:3000/gestorApi/v1/company",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T22:43:10.612Z",
+            "modified": "2024-03-04T00:53:30.342Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzRjNGYyYzE5MDBjOTAzMGQ0ZGEiLCJpYXQiOjE3MDk1MTM1NjcsImV4cCI6MTcwOTUxNzE2N30.3AKgF-VZesuWVsj8qZooQdH8rTnyMyLnbFoFjhvr1hw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nombre\": \"Atalium\",\r\n    \"categoriaEmpresarial\": \"Desarrollo\",\r\n    \"nivelImpacto\": \"Latinoamericano\",\r\n    \"añosTrayectoria\": 4,\r\n    \"datosClaves\": \"con certificados de china\",\r\n    \"correo\": \"Atalium@empresa.com\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6225e3e-ecb0-4fc4-a8e7-aa122af0b812",
+            "colId": "2c4f9300-2691-4a60-b137-ac14fbba1d57",
+            "containerId": "",
+            "name": "ver empresas",
+            "url": "http://localhost:3000/gestorApi/v1/company",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-03T22:45:21.093Z",
+            "modified": "2024-03-04T00:53:52.438Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzRjNGYyYzE5MDBjOTAzMGQ0ZGEiLCJpYXQiOjE3MDk1MTM1NjcsImV4cCI6MTcwOTUxNzE2N30.3AKgF-VZesuWVsj8qZooQdH8rTnyMyLnbFoFjhvr1hw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ecbe566-ba9e-4f46-b9b4-d8b314139db5",
+            "colId": "2c4f9300-2691-4a60-b137-ac14fbba1d57",
+            "containerId": "",
+            "name": "excel",
+            "url": "http://localhost:3000/gestorApi/v1/company/report",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-03T22:46:15.546Z",
+            "modified": "2024-03-04T00:54:00.881Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzRjNGYyYzE5MDBjOTAzMGQ0ZGEiLCJpYXQiOjE3MDk1MTM1NjcsImV4cCI6MTcwOTUxNzE2N30.3AKgF-VZesuWVsj8qZooQdH8rTnyMyLnbFoFjhvr1hw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
